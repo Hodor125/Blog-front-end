@@ -1,0 +1,27 @@
+.m-padded-tb-mini{
+    /*一个em是十四个像素 !important提高级别*/
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.m-padded-tb-massive{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+/*设置字体更细*/
+.m-text-thin{
+    font-weight: 300 !important;
+}
+/*设置字间距*/
+.m-text-spaced{
+    letter-spacing: 1px !important;
+}
+/*设置行间距*/
+.m-text-lined{
+    line-height: 1.8;
+}
+/*设置透明度*/
+.m-opacity-mini{
+    opacity: 0.8 !important;
+}
