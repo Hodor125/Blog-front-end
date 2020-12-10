@@ -34,25 +34,212 @@
       </div>
   </nav>
 
-  <!--中间内容-->
-  <div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+  <!--中间内容，container没法改大小，只能外部改-->
+  <div class="m-padded-tb-large m-container">
+      <!--container有自适应的功能，最好用它来包裹元素，限制了上下-->
+      <div class="ui container">
+          <!--header-->
+          <!--完成左右布局-->
+          <div class="ui grid">
+              <div class="eleven wide column">
+                  <!--top attached两个segment连在一起-->
+                  <div class="ui top attached segment">
+                      <!--直接取两行，middle aligned垂直居中-->
+                      <div class="ui middle aligned two column grid">
+                          <div class="column">
+                              <h3 class="ui teal header">博客</h3>
+                          </div>
+                          <!--靠右，自定义不换行m-inline-block-->
+                          <div class="right aligned column">
+                              共<h2 class="ui orange header m-inline-block m-text-thin">14</h2>篇
+                          </div>
+                      </div>
+                  </div>
+                  <!--content-->
+                  <!--两个segment连在一起-->
+                  <div class="ui attached segment">
+                      <!--设置边距padded，vertical两个相邻会加一条直线-->
+                      <div class="ui padded vertical segment m-padded-tb-big">
+                          <div class="ui grid">
+                              <div class="eleven wide column">
+                                  <h3 class="ui header">2077好玩吗</h3>
+                                  <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
+                                  <!--使用布局来做-->
+                                  <div class="ui grid">
+                                      <!--左边的图标-->
+                                      <div class="eleven wide column">
+                                          <!--横向列表 mini整个缩小-->
+                                          <div class="ui mini horizontal link list">
+                                              <div class="item">
+                                                  <!--头像-->
+                                                  <img src="https://picsum.photos/id/1005/120/100" alt="" class="ui avatar image">
+                                                  <div class="content"><a href="#" class="header">Hodor</a></div>
+                                              </div>
+                                              <div class="item">
+                                                  <i class="calendar icon"></i>2017-10-01
+                                              </div>
+                                              <div class="item">
+                                                  <i class="eye icon"></i>123
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!--给多一点 right aligned靠右-->
+                                      <div class="right aligned five wide column">
+                                          <!--m-padding-mini控制大小？-->
+                                          <a href="#" class="ui teal basic label m-padding-tiny m-text-thin">认知升级</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--设置链接打开新网页-->
+                              <div class="five wide column">
+                                  <a href="#" target="_blank">
+                                      <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui padded vertical segment m-padded-tb-big">
+                          <div class="ui grid">
+                              <div class="eleven wide column">
+                                  <h3 class="ui header">2077好玩吗</h3>
+                                  <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
+                                  <!--使用布局来做-->
+                                  <div class="ui grid">
+                                      <!--左边的图标-->
+                                      <div class="eleven wide column">
+                                          <!--横向列表 mini整个缩小-->
+                                          <div class="ui mini horizontal link list">
+                                              <div class="item">
+                                                  <!--头像-->
+                                                  <img src="https://picsum.photos/id/1005/120/100" alt="" class="ui avatar image">
+                                                  <div class="content"><a href="#" class="header">Hodor</a></div>
+                                              </div>
+                                              <div class="item">
+                                                  <i class="calendar icon"></i>2017-10-01
+                                              </div>
+                                              <div class="item">
+                                                  <i class="eye icon"></i>123
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!--给多一点 right aligned靠右-->
+                                      <div class="right aligned five wide column">
+                                          <!--m-padding-mini控制大小？-->
+                                          <a href="#" class="ui teal basic label m-padding-tiny m-text-thin">认知升级</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--设置链接打开新网页-->
+                              <div class="five wide column">
+                                  <a href="#" target="_blank">
+                                      <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui padded vertical segment m-padded-tb-big">
+                          <div class="ui grid">
+                              <div class="eleven wide column">
+                                  <h3 class="ui header">2077好玩吗</h3>
+                                  <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
+                                  <!--使用布局来做-->
+                                  <div class="ui grid">
+                                      <!--左边的图标-->
+                                      <div class="eleven wide column">
+                                          <!--横向列表 mini整个缩小-->
+                                          <div class="ui mini horizontal link list">
+                                              <div class="item">
+                                                  <!--头像-->
+                                                  <img src="https://picsum.photos/id/1005/120/100" alt="" class="ui avatar image">
+                                                  <div class="content"><a href="#" class="header">Hodor</a></div>
+                                              </div>
+                                              <div class="item">
+                                                  <i class="calendar icon"></i>2017-10-01
+                                              </div>
+                                              <div class="item">
+                                                  <i class="eye icon"></i>123
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!--给多一点 right aligned靠右-->
+                                      <div class="right aligned five wide column">
+                                          <!--m-padding-mini控制大小？-->
+                                          <a href="#" class="ui teal basic label m-padding-tiny m-text-thin">认知升级</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--设置链接打开新网页-->
+                              <div class="five wide column">
+                                  <a href="#" target="_blank">
+                                      <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="ui padded vertical segment m-padded-tb-big">
+                          <div class="ui grid">
+                              <div class="eleven wide column">
+                                  <h3 class="ui header">2077好玩吗</h3>
+                                  <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
+                                  <!--使用布局来做-->
+                                  <div class="ui grid">
+                                      <!--左边的图标-->
+                                      <div class="eleven wide column">
+                                          <!--横向列表 mini整个缩小-->
+                                          <div class="ui mini horizontal link list">
+                                              <div class="item">
+                                                  <!--头像-->
+                                                  <img src="https://picsum.photos/id/1005/120/100" alt="" class="ui avatar image">
+                                                  <div class="content"><a href="#" class="header">Hodor</a></div>
+                                              </div>
+                                              <div class="item">
+                                                  <i class="calendar icon"></i>2017-10-01
+                                              </div>
+                                              <div class="item">
+                                                  <i class="eye icon"></i>123
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!--给多一点 right aligned靠右-->
+                                      <div class="right aligned five wide column">
+                                          <!--m-padding-mini控制大小？-->
+                                          <a href="#" class="ui teal basic label m-padding-tiny m-text-thin">认知升级</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--设置链接打开新网页-->
+                              <div class="five wide column">
+                                  <a href="#" target="_blank">
+                                      <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!--bottom-->
+                  <div class="ui bottom attached segment">
+                      <div class="ui middle aligned two column grid">
+                          <div class="column">
+                              <a href="#" class="ui teal mini basic button">上一页</a>
+                          </div>
+                          <!--靠右，自定义不换行m-inline-block-->
+                          <div class="right aligned column">
+                              <a href="#" class="ui teal mini basic button">下一页</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="five wide column">
+                  <div class="ui segment">
+
+                  </div>
+              </div>
+          </div>
+
+          <!--列表-->
+      </div>
   </div>
 
   <!--底部 segment片段 vertical垂直-->
@@ -64,6 +251,7 @@
           <div class="ui inverted divided grid">
               <!--配置占用多少格子-->
               <div class="three wide column">
+                  <!--套一个保持格式-->
                   <div class="ui inverted link list">
                       <div class="item">
                           <img src="./static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 110px">

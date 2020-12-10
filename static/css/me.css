@@ -1,14 +1,50 @@
+/*控制元素内部的padding*/
+.m-padding-mini{
+    padding: 0.2em !important;
+}
+.m-padding-tiny{
+    padding: 0.3em !important;
+}
 .m-padded-tb-mini{
     /*一个em是十四个像素 !important提高级别*/
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
 }
-
+.m-padded-tb-tiny{
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+.m-padded-tb-small{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.m-padded-tb{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-padded-tb-large{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.m-padded-tb-big{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-padded-tb-huge{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
 .m-padded-tb-massive{
     padding-top: 5em !important;
     padding-bottom: 5em !important;
 }
 
+/*三合一*/
+.m-text{
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
 /*设置字体更细*/
 .m-text-thin{
     font-weight: 300 !important;
@@ -24,4 +60,15 @@
 /*设置透明度*/
 .m-opacity-mini{
     opacity: 0.8 !important;
+}
+
+/*显示的属性*/
+.m-inline-block{
+    display: inline-block !important;
+}
+
+/*改变container*/
+.m-container{
+    max-width:72em !important;
+    margin:auto;
 }
