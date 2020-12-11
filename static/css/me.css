@@ -39,6 +39,20 @@
     padding-bottom: 5em !important;
 }
 
+/*外部间隔margin*/
+.m-margin-tb-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.m-margin-top{
+    margin-top: 1em !important;
+}
+
+.m-margin-top-larger{
+    margin-top: 2em !important;
+}
+
 /*三合一*/
 .m-text{
     font-weight: 300 !important;
@@ -71,4 +85,9 @@
 .m-container{
     max-width:72em !important;
     margin:auto;
+}
+
+/*颜色改成黑色*/
+.m-black{
+    color: #333 !important;
 }
