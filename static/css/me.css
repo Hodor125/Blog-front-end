@@ -38,7 +38,12 @@
     padding-top: 5em !important;
     padding-bottom: 5em !important;
 }
-
+/*指定位置*/
+.m-right-top{
+    position:absolute;
+    top: 0;
+    right: 0;
+}
 /*外部间隔margin*/
 .m-margin-tb-tiny{
     margin-top: 0.3em !important;
@@ -90,4 +95,19 @@
 /*颜色改成黑色*/
 .m-black{
     color: #333 !important;
+}
+
+/*菜单按钮宽屏的情况下隐藏*/
+.m-mobile-show{
+    display: none !important;
+}
+/*手机端的情况*/
+@media screen and (max-width: 1000px) {
+    .m-mobile-hide{
+        /*自定义样式都需要加!important吗*/
+        display :none !important;
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
 }

@@ -13,16 +13,16 @@
   <nav class="ui inverted attached segment m-padded-tb-mini">
       <!--调整位置-->
       <div class="ui container">
-          <!--secondary改变样式-->
-          <div class="ui inverted secondary menu">
-              <!--item加框-->
-              <h2 class="ui teal header item">blog</h2>
-              <a href="#" class="item"><i class="home icon"></i>首页</a>
-              <a href="#" class="item"><i class="idea icon"></i>分类</a>
-              <a href="#" class="item"><i class="tags icon"></i>标签</a>
-              <a href="#" class="item"><i class="info icon"></i>关于我</a>
+          <!--secondary改变样式 stackable可堆叠适应移动端-->
+          <div class="ui inverted secondary stackable menu">
+              <!--item加框 m-mobile-hide在@screen中生效，手机端隐藏 m-item只是方便获取-->
+              <h2 class="ui teal header item">Blog</h2>
+              <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+              <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+              <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+              <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
               <!--搜索框-->
-              <div class="right item">
+              <div class="m-item right item m-mobile-hide">
                   <!--icon添加图标-->
                   <div class="ui icon input inverted transparent">
                       <input type="text" placeholder="Search...">
@@ -31,6 +31,10 @@
                   </div>
               </div>
           </div>
+          <!--自定义绝对布局 非手机端这个菜单按钮不显示 menu toggle 方便通过class获取这个元素-->
+          <a href="#" class="ui menu toggle icon black button m-right-top m-mobile-show">
+              <i class="sidebar icon"></i>
+          </a>
       </div>
   </nav>
 
@@ -40,7 +44,7 @@
       <div class="ui container">
           <!--header-->
           <!--完成左右布局-->
-          <div class="ui grid">
+          <div class="ui stackable grid">
               <!--左边的博客列表的内容-->
               <div class="eleven wide column">
                   <!--top attached两个segment连在一起-->
@@ -61,7 +65,8 @@
                   <div class="ui attached segment">
                       <!--设置边距padded，vertical两个相邻会加一条直线-->
                       <div class="ui padded vertical segment m-padded-tb-big">
-                          <div class="ui grid">
+                          <!--stackable mobile移动端显示在上面-->
+                          <div class="ui stackable mobile reversed grid">
                               <div class="eleven wide column">
                                   <h3 class="ui header">2077好玩吗</h3>
                                   <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
@@ -100,7 +105,8 @@
                           </div>
                       </div>
                       <div class="ui padded vertical segment m-padded-tb-big">
-                          <div class="ui grid">
+                          <!--stackable mobile移动端显示在上面-->
+                          <div class="ui stackable mobile reversed grid">
                               <div class="eleven wide column">
                                   <h3 class="ui header">2077好玩吗</h3>
                                   <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
@@ -139,7 +145,8 @@
                           </div>
                       </div>
                       <div class="ui padded vertical segment m-padded-tb-big">
-                          <div class="ui grid">
+                          <!--stackable mobile移动端显示在上面-->
+                          <div class="ui stackable mobile reversed grid">
                               <div class="eleven wide column">
                                   <h3 class="ui header">2077好玩吗</h3>
                                   <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
@@ -178,7 +185,8 @@
                           </div>
                       </div>
                       <div class="ui padded vertical segment m-padded-tb-big">
-                          <div class="ui grid">
+                          <!--stackable mobile移动端显示在上面-->
+                          <div class="ui stackable mobile reversed grid">
                               <div class="eleven wide column">
                                   <h3 class="ui header">2077好玩吗</h3>
                                   <p class="m-text">《赛博朋克2077》是知名游戏《巫师》系列开发商CD Projekt RED（简称CDPR）开发制作的一款角色扮演游戏。故事设定在黑暗腐败、科技高度发达的未来世界中，并且兼有开放世界元素与RPG机制。</p>
@@ -364,7 +372,7 @@
       <div class="ui center aligned container">
           <!--格子 grid是分为十六份 bootstrap是分为十二份-->
           <!--divided分割线-->
-          <div class="ui inverted divided grid">
+          <div class="ui inverted divided stackable grid">
               <!--配置占用多少格子-->
               <div class="three wide column">
                   <!--套一个保持格式-->
@@ -401,5 +409,11 @@
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    // 通过jquery在移动端显示和隐藏导航栏
+    $(".menu.toggle").click(function (){
+        $(".m-item").toggleClass("m-mobile-hide");
+    })
+</script>
 </body>
 </html>
