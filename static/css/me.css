@@ -1,3 +1,8 @@
+/*背景图片*/
+body {
+    background: url("../images/bg.png");
+}
+
 /*控制元素内部的padding*/
 .m-padding-mini{
     padding: 0.2em !important;
@@ -37,6 +42,10 @@
 .m-padded-tb-massive{
     padding-top: 5em !important;
     padding-bottom: 5em !important;
+}
+.m-padded-lr{
+    padding-left: 4em !important;
+    padding-right: 4em !important;
 }
 /*指定位置*/
 .m-right-top{
@@ -80,6 +89,9 @@
 .m-opacity-mini{
     opacity: 0.8 !important;
 }
+.m-opacity-tiny{
+    opacity: 0.6 !important;
+}
 
 /*显示的属性*/
 .m-inline-block{
@@ -89,6 +101,11 @@
 /*改变container*/
 .m-container{
     max-width:72em !important;
+    margin:auto;
+}
+
+.m-container-small{
+    max-width:60em !important;
     margin:auto;
 }
 
