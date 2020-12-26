@@ -80,8 +80,8 @@
               <br>
 
               <!--文章-->
-              <!--m-padded-lr左右留白-->
-              <div id="content" class="m-padded-lr">
+              <!--m-padded-lr-responsive左右留白-->
+              <div id="content" class="m-padded-lr-responsive">
                   <h2>1</h2>
                   <p>
                       在《赛博朋克2077》中，玩家被丢入了一个黑暗的未来社会。故事发生在一个叫做“夜之城（Night City）”的大都会，以它为背景游戏讲述了这样一个人挣扎的故事，他从小在街头长大，一直试图在贫民窟中间找到自己的出路，在帮派和产业巨头的无尽斗争中生存下去，在这个充满污垢和罪恶的城市中成长。毒品、暴力、贫穷和专政并没有在2077年消失，几十年过去了，人们仍然保留着那份贪婪、狭隘和懦弱。但是不断困扰人类的并不只有来自过去的幽灵，还有来自当代的新问题。“惊魂”们的表现越来越狂暴：大街上充满了瘾君子们——他们为一种刚刚出现的娱乐项目所沉迷：“超梦”（braindance）。超梦十分廉价，却可以让人体验到其他人的生活和他们的情绪，尤其是当其他人的生活比自己的更加丰富多彩时，这种刺激是无与伦比的。
@@ -109,22 +109,153 @@
               <br>
 
               <!--标签-->
-              <div class="m-padded-lr">
+              <div class="m-padded-lr-responsive">
                   <div class="ui teal basic left pointing label">游戏</div>
               </div>
 
               <!--赞赏-->
               <div class="ui center aligned basic aligned segment">
-                  <button class="ui orange basic circular button">赞赏</button>
+                  <button id="payButton" class="ui orange basic circular button">赞赏</button>
+              </div>
+              <!--payQ popup定义区域-->
+              <div class="ui payQ flowing popup transition hidden">
+                  <div class="ui orange basic label">
+                      <!--继承上一个元素的字体-->
+                      <div class="ui images" style="font-size: inherit !important;">
+                          <div class="image">
+                              <!--rounded bordered圆角边线-->
+                              <img src="./static/images/wechat.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                              <div>支付宝</div>
+                          </div>
+                          <div class="image">
+                              <!--rounded bordered圆角边线-->
+                              <img src="./static/images/wechat.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                              <div>微信</div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
 
           <!--positive改变样式-->
           <div class="ui attached positive message">
-              博客信息
+              <!--博客信息 加ui middle aligned垂直居中-->
+              <div class="ui middle aligned grid">
+                  <div class="eleven wide column">
+                      <ui class="list">
+                          <li>作者：LML</li>
+                          <li>发表时间：2020-02-02 13：15</li>
+                          <li>版权声明：自由转载-非商用-非衍生-保持署名-（创意共享3.0）许可证</li>
+                          <li>转载：请在文末添加原文链接</li>
+                      </ui>
+                  </div>
+                  <div class="five wide column">
+                      <img src="./static/images/wechat.jpg" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                  </div>
+              </div>
           </div>
+
           <div class="ui bottom attached segment">
-              留言区域
+              <!--留言区域-->
+              <div class="ui teal segment">
+
+              </div>
+              <div class="ui threaded comments">
+                  <h3 class="ui dividing header">Comments</h3>
+                  <div class="comment">
+                      <a class="avatar">
+                          <img src="https://picsum.photos/id/1005/120/100">
+                      </a>
+                      <div class="content">
+                          <a class="author">Matt</a>
+                          <div class="metadata">
+                              <span class="date">Today at 5:42PM</span>
+                          </div>
+                          <div class="text">
+                              How artistic!
+                          </div>
+                          <div class="actions">
+                              <a class="reply">回复</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comment">
+                      <a class="avatar">
+                          <img src="https://picsum.photos/id/1005/120/100">
+                      </a>
+                      <div class="content">
+                          <a class="author">Elliot Fu</a>
+                          <div class="metadata">
+                              <span class="date">Yesterday at 12:30AM</span>
+                          </div>
+                          <div class="text">
+                              <p>This has been very useful for my research. Thanks as well!</p>
+                          </div>
+                          <div class="actions">
+                              <a class="reply">回复</a>
+                          </div>
+                      </div>
+                      <div class="comments">
+                          <div class="comment">
+                              <a class="avatar">
+                                  <img src="https://picsum.photos/id/1005/120/100">
+                              </a>
+                              <div class="content">
+                                  <a class="author">Jenny Hess</a>
+                                  <div class="metadata">
+                                      <span class="date">Just now</span>
+                                  </div>
+                                  <div class="text">
+                                      Elliot you are always so right :)
+                                  </div>
+                                  <div class="actions">
+                                      <a class="reply">回复</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comment">
+                      <a class="avatar">
+                          <img src="https://picsum.photos/id/1005/120/100">
+                      </a>
+                      <div class="content">
+                          <a class="author">Joe Henderson</a>
+                          <div class="metadata">
+                              <span class="date">5 days ago</span>
+                          </div>
+                          <div class="text">
+                              Dude, this is awesome. Thanks so much
+                          </div>
+                          <div class="actions">
+                              <a class="reply">回复</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="ui form">
+                  <div class="field">
+                      <textarea name="content" id="comment" cols="30" rows="10" placeholder="请输入评论信息"></textarea>
+                  </div>
+                  <!--m-mobile-wide移动端响应-->
+                  <div class="fields">
+                      <div class="field m-mobile-wide m-margin-bottom-small">
+                          <div class="ui left icon input">
+                              <i class="user icon"></i>
+                              <input type="text" name="nickname" placeholder="姓名">
+                          </div>
+                      </div>
+                      <div class="field m-mobile-wide m-margin-bottom-small">
+                          <div class="ui left icon input">
+                              <i class="mail icon"></i>
+                              <input type="text" name="email" placeholder="邮箱">
+                          </div>
+                      </div>
+                      <div class="field m-mobile-wide m-margin-bottom-small">
+                          <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
   </div>
@@ -176,7 +307,14 @@
     // 通过jquery在移动端显示和隐藏导航栏
     $(".menu.toggle").click(function (){
         $(".m-item").toggleClass("m-mobile-hide");
-    })
+    });
+
+    //赞赏按钮
+    $("#payButton").popup({
+        popup : $('.payQ.popup'),
+        on : 'click',
+        position : "bottom center"
+    });
 </script>
 </body>
 </html>
