@@ -67,7 +67,7 @@ body {
 /*外部间隔margin*/
 .m-margin-tb-tiny{
     margin-top: 0.3em !important;
-    margin-bottom: 0.5em !important;
+    margin-bottom: 0.3em !important;
 }
 
 .m-margin-top{
@@ -81,6 +81,10 @@ body {
     margin-bottom: 0.5em !important;
 }
 
+.m-margin-lr-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
 /*三合一*/
 .m-text{
     font-weight: 300 !important;
