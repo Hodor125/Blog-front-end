@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../static/css/me.css">
+    <link rel="stylesheet" href="../static/lib/editor-markdown/css/editormd.min.css">
     <title>博客发布</title>
 </head>
 <body>
@@ -77,7 +78,42 @@
 
               <!--文章内容-->
               <div class="field">
-                  <textarea name="blogContent" id="blogContent" cols="30" rows="10" placeholder="博客内容"></textarea>
+                  <div id="blog-content" style="z-index: 1 !important;">
+                      <textarea name="blogContent" id="blogContent" style="display:none;">
+                          [TOC]
+
+#### Disabled options
+
+- TeX (Based on KaTeX);
+- Emoji;
+- Task lists;
+- HTML tags decode;
+- Flowchart and Sequence Diagram;
+
+#### Editor.md directory
+
+    editor.md/
+            lib/
+            css/
+            scss/
+            tests/
+            fonts/
+            images/
+            plugins/
+            examples/
+            languages/
+            editormd.js
+            ...
+
+```html
+&lt;!-- English --&gt;
+&lt;script src="../dist/js/languages/en.js"&gt;&lt;/script&gt;
+
+&lt;!-- 繁體中文 --&gt;
+&lt;script src="../dist/js/languages/zh-tw.js"&gt;&lt;/script&gt;
+```
+                      </textarea>
+                  </div>
               </div>
 
               <!--文章分类和标签-->
@@ -199,7 +235,19 @@
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-<script>
+<script src="../static/lib/editor-markdown/editormd.min.js"></script>
+<script type="text/javascript">
+    //初始化markdown
+    var contentEditor;
+
+    $(function() {
+        contentEditor = editormd("blog-content", {
+            width: "100%",
+            height: 640,
+            syncScrolling: "single",
+            path: "../static/lib/editor-markdown/lib/"
+        });
+    });
     // 通过jquery在移动端显示和隐藏导航栏
     $(".menu.toggle").click(function (){
         $(".m-item").toggleClass("m-mobile-hide");
