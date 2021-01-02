@@ -16,6 +16,9 @@ body {
 .m-padding-tiny{
     padding: 0.3em !important;
 }
+.m-padding{
+    padding: 1em !important;
+}
 .m-padded-tb-mini{
     /*一个em是十四个像素 !important提高级别*/
     padding-top: 0.2em !important;
@@ -63,6 +66,20 @@ body {
     position:absolute;
     top: 0;
     right: 0;
+}
+/*指定绝对位置*/
+.m-fix{
+    position: fixed !important;
+    z-index: 10;
+}
+.m-right-bottom{
+    bottom: 0 !important;
+    right: 0 !important;
+
+    /*相同效果?*/
+    /*position:absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
 }
 /*外部间隔margin*/
 .m-margin-tb-tiny{
