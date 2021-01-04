@@ -44,7 +44,7 @@
   </nav>
 
   <!--中间内容，container没法改大小，只能外部改-->
-  <div class="m-padded-tb-big m-container-small animated fadeIn">
+  <div id="waypoint" class="m-padded-tb-big m-container-small animated fadeIn">
       <div class="ui container">
           <!--segment是单独的区域 top表示是顶部的，不会连接上面的-->
 
@@ -339,103 +339,102 @@ h5,h6{font-size:1em;}
           </div>
 
           <div id="comment-container" class="ui bottom attached segment">
-              <!--留言区域-->
               <div class="ui teal segment">
-
-              </div>
-              <div class="ui threaded comments">
-                  <h3 class="ui dividing header">Comments</h3>
-                  <div class="comment">
-                      <a class="avatar">
-                          <img src="https://picsum.photos/id/1005/120/100">
-                      </a>
-                      <div class="content">
-                          <a class="author">Matt</a>
-                          <div class="metadata">
-                              <span class="date">Today at 5:42PM</span>
-                          </div>
-                          <div class="text">
-                              How artistic!
-                          </div>
-                          <div class="actions">
-                              <a class="reply">回复</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="comment">
-                      <a class="avatar">
-                          <img src="https://picsum.photos/id/1005/120/100">
-                      </a>
-                      <div class="content">
-                          <a class="author">Elliot Fu</a>
-                          <div class="metadata">
-                              <span class="date">Yesterday at 12:30AM</span>
-                          </div>
-                          <div class="text">
-                              <p>This has been very useful for my research. Thanks as well!</p>
-                          </div>
-                          <div class="actions">
-                              <a class="reply">回复</a>
+                  <!--留言区域-->
+                  <div class="ui threaded comments">
+                      <h3 class="ui dividing header">Comments</h3>
+                      <div class="comment">
+                          <a class="avatar">
+                              <img src="https://picsum.photos/id/1005/120/100">
+                          </a>
+                          <div class="content">
+                              <a class="author">Matt</a>
+                              <div class="metadata">
+                                  <span class="date">Today at 5:42PM</span>
+                              </div>
+                              <div class="text">
+                                  How artistic!
+                              </div>
+                              <div class="actions">
+                                  <a class="reply">回复</a>
+                              </div>
                           </div>
                       </div>
-                      <div class="comments">
-                          <div class="comment">
-                              <a class="avatar">
-                                  <img src="https://picsum.photos/id/1005/120/100">
-                              </a>
-                              <div class="content">
-                                  <a class="author">Jenny Hess</a>
-                                  <div class="metadata">
-                                      <span class="date">Just now</span>
-                                  </div>
-                                  <div class="text">
-                                      Elliot you are always so right :)
-                                  </div>
-                                  <div class="actions">
-                                      <a class="reply">回复</a>
+                      <div class="comment">
+                          <a class="avatar">
+                              <img src="https://picsum.photos/id/1005/120/100">
+                          </a>
+                          <div class="content">
+                              <a class="author">Elliot Fu</a>
+                              <div class="metadata">
+                                  <span class="date">Yesterday at 12:30AM</span>
+                              </div>
+                              <div class="text">
+                                  <p>This has been very useful for my research. Thanks as well!</p>
+                              </div>
+                              <div class="actions">
+                                  <a class="reply">回复</a>
+                              </div>
+                          </div>
+                          <div class="comments">
+                              <div class="comment">
+                                  <a class="avatar">
+                                      <img src="https://picsum.photos/id/1005/120/100">
+                                  </a>
+                                  <div class="content">
+                                      <a class="author">Jenny Hess</a>
+                                      <div class="metadata">
+                                          <span class="date">Just now</span>
+                                      </div>
+                                      <div class="text">
+                                          Elliot you are always so right :)
+                                      </div>
+                                      <div class="actions">
+                                          <a class="reply">回复</a>
+                                      </div>
                                   </div>
                               </div>
                           </div>
                       </div>
-                  </div>
-                  <div class="comment">
-                      <a class="avatar">
-                          <img src="https://picsum.photos/id/1005/120/100">
-                      </a>
-                      <div class="content">
-                          <a class="author">Joe Henderson</a>
-                          <div class="metadata">
-                              <span class="date">5 days ago</span>
-                          </div>
-                          <div class="text">
-                              Dude, this is awesome. Thanks so much
-                          </div>
-                          <div class="actions">
-                              <a class="reply">回复</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="ui form">
-                  <div class="field">
-                      <textarea name="content" id="comment" cols="30" rows="10" placeholder="请输入评论信息"></textarea>
-                  </div>
-                  <!--m-mobile-wide移动端响应-->
-                  <div class="fields">
-                      <div class="field m-mobile-wide m-margin-bottom-small">
-                          <div class="ui left icon input">
-                              <i class="user icon"></i>
-                              <input type="text" name="nickname" placeholder="姓名">
+                      <div class="comment">
+                          <a class="avatar">
+                              <img src="https://picsum.photos/id/1005/120/100">
+                          </a>
+                          <div class="content">
+                              <a class="author">Joe Henderson</a>
+                              <div class="metadata">
+                                  <span class="date">5 days ago</span>
+                              </div>
+                              <div class="text">
+                                  Dude, this is awesome. Thanks so much
+                              </div>
+                              <div class="actions">
+                                  <a class="reply">回复</a>
+                              </div>
                           </div>
                       </div>
-                      <div class="field m-mobile-wide m-margin-bottom-small">
-                          <div class="ui left icon input">
-                              <i class="mail icon"></i>
-                              <input type="text" name="email" placeholder="邮箱">
-                          </div>
+                  </div>
+                  <div class="ui form">
+                      <div class="field">
+                          <textarea name="content" id="comment" cols="30" rows="10" placeholder="请输入评论信息"></textarea>
                       </div>
-                      <div class="field m-mobile-wide m-margin-bottom-small">
-                          <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                      <!--m-mobile-wide移动端响应-->
+                      <div class="fields">
+                          <div class="field m-mobile-wide m-margin-bottom-small">
+                              <div class="ui left icon input">
+                                  <i class="user icon"></i>
+                                  <input type="text" name="nickname" placeholder="姓名">
+                              </div>
+                          </div>
+                          <div class="field m-mobile-wide m-margin-bottom-small">
+                              <div class="ui left icon input">
+                                  <i class="mail icon"></i>
+                                  <input type="text" name="email" placeholder="邮箱">
+                              </div>
+                          </div>
+                          <div class="field m-mobile-wide m-margin-bottom-small">
+                              <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                          </div>
                       </div>
                   </div>
               </div>
@@ -443,17 +442,17 @@ h5,h6{font-size:1em;}
       </div>
   </div>
 
-  <!--竖直按钮组，文章目录和回到最顶部-->
+  <!--竖直工具按钮组，文章目录和回到最顶部-->
   <!--外层加上div控制不要紧贴右边-->
-  <div class="m-padding m-fix m-right-bottom">
+  <div id="toolbar" class="m-padding m-fix m-right-bottom" style="display: none">
       <!--m-fix m-right-bottom指定绝对位置,浮在最上面-->
       <div class="ui vertical icon buttons">
           <button type="button" class="ui teal toc button">目录</button>
           <!--#id跳转到指定的位置-->
           <a href="#comment-container" class="ui teal button" type="button">留言</a>
           <!--加icon居中？-->
-          <button class="ui icon button"><i class="weixin icon"></i></button>
-          <a href="#" class="ui icon button"><i class="angle up icon"></i></a>
+          <button class="ui wechatBT icon button"><i class="weixin icon"></i></button>
+          <div id="button-toTop" class="ui icon button"><i class="angle up icon"></i></div>
       </div>
   </div>
 
@@ -463,8 +462,16 @@ h5,h6{font-size:1em;}
       </ol>
   </div>
 
+  <!--隐藏的微信二维码显示区域-->
+  <div id="qrcode" class="ui wechat-qr flowing popup transition hidden m-padding-mini" style="width: 115px">
+      <div class="image">
+          <!--rounded bordered圆角边线-->
+<!--          <img src="../static/images/wechat.jpg" alt="" class="ui rounded bordered image" style="width: 120px">-->
+      </div>
+  </div>
 
-  <!--底部 segment片段 vertical垂直-->
+
+  <!--底部footer segment片段 vertical垂直-->
   <footer class="ui inverted vertical segment m-padded-tb-massive">
       <!--所有格子的内容居中-->
       <div class="ui center aligned container">
@@ -507,8 +514,11 @@ h5,h6{font-size:1em;}
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script src="../static/lib/prism/prism.js"></script>
 <script src="../static/lib/tocbot/tocbot.min.js"></script>
+<script src="../static/lib/qrcode/qrcode.min.js"></script>
+<script src="../static/lib/waypoints/jquery.waypoints.min.js"></script>
 <script>
     //初始化右下角按钮的目录
     tocbot.init({
@@ -537,6 +547,41 @@ h5,h6{font-size:1em;}
         on : 'click',
         position : "left center"
     });
+
+    // 弹出二维码
+    $(".wechatBT").popup({
+        popup : $('.wechat-qr.popup'),
+        on : 'click',
+        position : "left center"
+    });
+
+    //生成二维码
+    var qrcode = new QRCode("qrcode", {
+        text: "http://baidu.com/",
+        width: 110,
+        height: 110,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+
+    //平滑滚动
+    $('#button-toTop').click(function () {
+        $(window).scrollTo(0,500);
+    });
+
+    //滚动侦测，检测博客内容最外层的div
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function(direction) {
+            console.log(direction);
+            if(direction == 'down') {
+                $('#toolbar').show(500);
+            } else {
+                $('#toolbar').hide(500);
+            }
+        }
+    })
 </script>
 </body>
 </html>
